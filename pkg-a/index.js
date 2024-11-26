@@ -1,4 +1,10 @@
-import {StrictMode} from 'pkg-b'; 
-import React from 'react';
+import { createElement } from "react";
+import { renderToString } from "react-dom/server";
+import { useMyContext } from "pkg-b";
 
-console.log("Are StrictMode symbols equal?", React.StrictMode === StrictMode);
+function MyComponent() {
+  useMyContext();
+  return "Hi from component";
+}
+
+console.log(renderToString(createElement(MyComponent, {}, null)));

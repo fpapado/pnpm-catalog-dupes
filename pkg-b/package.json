@@ -10,7 +10,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "react": "catalog:"
+  },
+  "peerDependencies": {
+    "react": "^18"
   }
 }

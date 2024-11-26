@@ -11,7 +11,14 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "pkg-b": "workspace:^",
-    "react": "catalog:"
+    "pkg-b": "workspace:^"
+  },
+  "devDependencies": {
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
   }
 }

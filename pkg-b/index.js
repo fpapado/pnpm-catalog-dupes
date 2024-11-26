@@ -1,3 +1,8 @@
-import React from 'react';
+import { createContext, useContext } from "react";
 
-export const StrictMode = React.StrictMode
+const context = createContext("Hello world");
+
+export const useMyContext = () => {
+  const value = useContext(context);
+  console.log(value);
+};
